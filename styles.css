@@ -1,0 +1,358 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: white;
+}
+
+nav {
+    background: #333;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between; /* Space between logo and nav items */
+    align-items: center; /* Center items vertically */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center; /* Center logo and text vertically */
+}
+
+.logo {
+    width: 50px; /* Adjust size of the logo */
+    height: 50px; /* Maintain round shape */
+    border-radius: 50%; /* Make logo round */
+    margin-right: 15px; /* Space between logo and text */
+}
+
+nav h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: orange;
+    transition: color 0.3s ease;
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between; /* Left-align one card, right-align the other */
+    align-items: flex-start;
+    max-width: 90%; /* Adjust max-width to control space on left and right */
+    margin: 20px auto; /* Center the container */
+    gap: 20px; /* Space between the cards */
+}
+
+.card {
+    background-color: #000000;
+    border-radius: 8px;
+    padding: 20px;
+    width: 45%; /* Width of each card */
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+    animation: fadeIn 0.5s;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column; /* Stack button rows vertically */
+}
+
+.button-row {
+    display: flex; /* Horizontal layout for buttons */
+    justify-content: space-between; /* Space between buttons */
+    margin: 5px 0; /* Margin between button rows */
+}
+
+.button {
+    padding: 10px 15px;
+    margin: 0 5px; /* Adjust margin to prevent overlap */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: bold;
+    flex: 1; /* Make buttons grow to fill space */
+}
+
+.button.red { background-color: #e74c3c; }
+.button.blue { background-color: #3498db; }
+.button.green { background-color: #2ecc71; }
+.button.yellow { background-color: #f1c40f; }
+.button.purple { background-color: #9b59b6; }
+.button.orange { background-color: #e67e22; }
+.button.teal { background-color: #1abc9c; }
+.button.pink { background-color: #ff69b4; }
+.button.brown { background-color: #8B4513; }
+.button.gray { background-color: #bdc3c7; }
+
+.button:hover {
+    background-color: orange; /* Hover effect */
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+.ad-content {
+    margin: 20px 0;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Center button horizontally */
+    margin-top: 10px; /* Space above the button */
+}
+
+.cta-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: orange; /* Hover effect */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* about section  */
+.about-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between image and text */
+    align-items: flex-start; /* Align items at the start */
+    margin: 40px auto; /* Center container with more space */
+    max-width: 1200px; /* Limit width */
+}
+
+.about-image-card {
+    width: 45%; /* Set width to slightly less than half for left card */
+    background-color: #000000; /* Background color for About image card */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Inner padding */
+    margin-right: 40px; /* Space to the right */
+    transition: transform 0.3s; /* Smooth scale effect */
+}
+
+.about-image {
+    width: 100%; /* Full width of the card */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for image */
+}
+
+.about-text-card {
+    width: 45%; /* Set width to slightly less than half for right card */
+    background-color: #000000; /* Background color for About text card */
+    color: white; /* Text color */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Inner padding */
+    margin-left: 40px; /* Added space to the left for better separation */
+    transition: transform 0.3s; /* Smooth scale effect */
+    opacity: 0; /* Start hidden */
+    animation: slideIn 1s forwards; /* Animation for sliding in */
+}
+
+.about-title {
+    color: orange; /* Set text color to orange */
+    display: flex; /* Use flexbox for title and icon */
+    align-items: center; /* Center icon and text vertically */
+    font-size: 1.5em; /* Increase font size */
+    position: relative; /* Required for the border effect */
+    padding: 10px; /* Padding inside the title */
+    animation: smoothBounce 1.5s infinite; /* Continuous smoother bouncing animation */
+}
+
+.about-icon {
+    margin-right: 10px; /* Space between icon and text */
+    font-size: 1.5em; /* Size of the icon */
+}
+
+.animated-text {
+    animation: fadeIn 1s ease-in-out; /* Add fade-in animation */
+    margin-top: 10px; /* Margin to space out paragraphs */
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Start fully transparent */
+    }
+    to {
+        opacity: 1; /* End fully opaque */
+    }
+}
+
+/* Keyframes for slide-in animation */
+@keyframes slideIn {
+    from {
+        transform: translateX(50%); /* Start from the right */
+        opacity: 0; /* Start hidden */
+    }
+    to {
+        transform: translateX(0); /* Move to original position */
+        opacity: 1; /* End fully opaque */
+    }
+}
+
+/* Keyframes for smoother bouncing animation */
+@keyframes smoothBounce {
+    0%, 100% {
+        transform: translateY(0); /* Original position */
+    }
+    20% {
+        transform: translateY(-5px); /* Move slightly up */
+    }
+    50% {
+        transform: translateY(-2px); /* Slightly lower bounce */
+    }
+    80% {
+        transform: translateY(-1px); /* Very slight bounce */
+    }
+}
+
+/* Hover effects for cards */
+.about-image-card:hover, .about-text-card:hover {
+    transform: scale(1.02); /* Slightly enlarge card on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Add shadow effect */
+}
+
+
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column; /* Stack cards vertically on small screens */
+    }
+
+    .card {
+        width: 100%; /* Full width for each card on mobile */
+    }
+
+    nav {
+        flex-direction: column; /* Stack nav items on mobile */
+        align-items: flex-start; /* Align left */
+    }
+
+    nav ul {
+        padding: 10px 0; /* Padding for mobile */
+    }
+}
+
+
+/* Section for the cards */
+.card-join {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Card container */
+.cards {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 8px 20px rgb(755, 92, 230);
+    width: 280px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Card hover effect */
+.cards:hover {
+    transform: translateY(-10px);
+}
+
+/* Card image styling */
+.card-imgs {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Card content area */
+.card-contents, .card-contentj {
+    padding: 15px;
+}
+
+/* Description text styling */
+.description {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+/* Button styling */
+.join-btns {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.join-btns:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .card-join {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards {
+        width: 100%;
+        max-width: 320px;
+    }
+}

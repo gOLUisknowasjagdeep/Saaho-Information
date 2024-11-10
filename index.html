@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saaho Information</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="logo-container">
+            <img src="your-logo.png" alt="Logo" class="logo"> <!-- Replace with your logo path -->
+            <h1>Saaho Information</h1>
+        </div>
+        <!-- <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#important-links">Important Links</a></li>
+            <li><a href="#ads">Ads</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul> -->
+    </nav>
+
+    <section id="home">
+        <h2>Welcome </h2>
+    </section>
+
+    <section id="important-links" class="card-container">
+        <div class="card">
+            <h3>Important Links</h3>
+            <div class="buttons">
+                <div class="button-row">
+                    <a href="https://blacksnwhite.com/saaho_information/classten/blacknwhite/display.php" class="button red">
+                        Class 10
+                    </a>
+                    <a href="https://blacksnwhite.com/saaho_information/classeleven/blacknwhite/display.php" class="button blue">
+                        Class 11
+                    </a>
+                </div>
+                <div class="button-row">
+                    <a href="#join" class="button green">
+                        Join us 
+                    </a>
+                    <!-- <a href="http://localhost/saaho_information/classeleven/blacknwhite/display.php#card-containers" class="button yellow">
+                        Class 11
+                    </a> -->
+                </div>
+                <div class="button-row">
+                    <!-- <a href="http://localhost/saaho_information/classten/blacknwhite/display.php#card-containers" class="button purple">
+                        Class 10
+                    </a>
+                    <a href="http://localhost/saaho_information/classeleven/blacknwhite/display.php#card-containers" class="button orange">
+                        Class 11
+                    </a> -->
+                </div>
+                <div class="button-row">
+                    <!-- <a href="http://localhost/saaho_information/classten/blacknwhite/display.php#card-containers" class="button teal">
+                        Class 10
+                    </a>
+                    <a href="http://localhost/saaho_information/classeleven/blacknwhite/display.php#card-containers" class="button pink">
+                        Class 11
+                    </a> -->
+                </div>
+                <div class="button-row">
+                    <!-- <a href="http://localhost/saaho_information/classten/blacknwhite/display.php#card-containers" class="button brown">
+                        Class 10
+                    </a>
+                    <a href="http://localhost/saaho_information/classeleven/blacknwhite/display.php#card-containers" class="button gray">
+                        Class 11
+                    </a> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Ads</h3>
+            <div class="ad-content">
+                <!-- Display Image Here -->
+                <img src="your-image.jpg" alt="Ad" id="ad-image" style="width: 100%; height: auto;">
+
+                <!-- Centered Button below the image -->
+                <div class="button-container">
+                    <button class="cta-button">Click Me</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="about-container">
+            <div class="about-image-card">
+                <img src="about-image.jpg" alt="About Us" class="about-image"> <!-- Replace with your About image path -->
+            </div>
+            <div class="about-text-card">
+                <h2 class="about-title">
+                    <i class="fa fa-info-circle about-icon"></i> <!-- Font Awesome icon -->
+                    About Us
+                </h2>
+                <p class="animated-text">Welcome to Black N White!</p>
+                <p class="animated-text">Black N White is your trusted source for high-quality educational resources and learning materials. Our mission is to empower learners of all ages and backgrounds by providing access to a wide range of educational content.</p>
+                <p class="animated-text">Whether you're a student looking to enhance your knowledge, a teacher seeking valuable teaching resources, or a lifelong learner on a quest for new skills, we've got you covered. Our dedicated team is committed to fostering a culture of lifelong learning and academic excellence.</p>
+                <p class="animated-text">Explore our extensive collection of courses, tutorials, and study materials, and embark on a journey of discovery and growth. Join our community of learners today and unlock your full potential.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="card-join" id="join">
+        <div class="cards">
+            <img src="wp.png" alt="Card Image" class="card-imgs">
+            <div class="card-contents">
+                <p class="description">This is a description of the card. It provides information about the content or service offered.</p>
+                <button class="join-btns">Join Now</button>
+            </div>
+        </div>
+        <!--telegram-->
+        <div class="cards">
+            <img src="telegram.png" alt="Card Image" class="card-imgs">
+            <div class="card-contents">
+                <p class="description">This is a description of the card. It provides information about the content or service offered.</p>
+                <button class="join-btns">Join Now</button>
+            </div>
+        </div>
+               <!--other-->
+               <div class="cards">
+                <img src="telegram.png" alt="Card Image" class="card-imgs">
+                <div class="card-contentj">
+                    <p class="description">This is a description of the card. It provides information about the content or service offered.</p>
+                    <button class="join-btns">Join Now</button>
+                </div>
+            </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Uncomment this script to toggle between image and video
+        /*
+        document.getElementById('toggle-ad').addEventListener('click', function() {
+            const adImage = document.getElementById('ad-image');
+            const adVideo = document.getElementById('ad-video');
+
+            if (adImage.style.display === 'none' && adVideo.style.display === 'none') {
+                adImage.style.display = 'block'; // Show image first
+                adVideo.style.display = 'none';
+            } else if (adImage.style.display === 'block') {
+                adImage.style.display = 'none';
+                adVideo.style.display = 'block'; // Then show video
+            } else {
+                adImage.style.display = 'none';
+                adVideo.style.display = 'none'; // Hide both
+            }
+        });
+    
+    </script>
+</body>
+</html>
